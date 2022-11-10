@@ -1,0 +1,5 @@
+Aston\com\tests\TestBase.class
+Aston\com\tests\UITests\main_page\MainPageTest.class
+Aston\com\tests\UITests\main_page\ATinkMainPageTest.class
+Aston\com\tests\UITests\main_page\BaseMainPage.class
+Aston\com\tests\UITests\registration_autorization\recovery_password\RecoveryPasswordPageTest.class

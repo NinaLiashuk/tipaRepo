@@ -1,0 +1,15 @@
+Aston\com\helpers\ConfigReader.class
+Aston\com\pages\registration_autorization\contacts\ContactsPage.class
+Aston\com\pages\BasePage.class
+Aston\com\pages\main_page\MainPage.class
+Aston\com\constants\GlobalData.class
+Aston\com\managers\ManagerWebDriver.class
+Aston\com\pages\registration_autorization\branches\BranchesAndATMs.class
+Aston\com\helpers\GlobalMap.class
+Aston\com\pages\main_page\ATinkMainPage.class
+Aston\com\helpers\Required.class
+Aston\com\pages\registration_autorization\exchange_rates\ExchangeRates.class
+Aston\com\constants\DataForUITests.class
+Aston\com\pages\registration_autorization\recovery_password\RecoveryPasswordPage.class
+Aston\com\constants\Configuration.class
+Aston\com\helpers\PropertiesProvider.class
