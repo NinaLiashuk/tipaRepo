@@ -3,7 +3,7 @@
 <suite name="Parallel Tests" parallel="tests" thread-count="4">
     <test name="Web tests chrome" parallel="classes">
         <classes>
-            <class name="Aston.com.tests.UITests.registration_autorization.recovery_password.RecoveryPasswordPageTest "/>
+            <class name="Aston.com.tests.UITests.registration_autorization.recovery_password.RecoveryPasswordPageTest"/>
             <class name="Aston.com.tests.UITests.main_page.ATinkMainPageTest"/>
         </classes>
     </test>

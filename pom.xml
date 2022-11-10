@@ -38,18 +38,11 @@
             <artifactId>java-client</artifactId>
             <version>8.2.0</version>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>io.github.openfeign</groupId>-->
-<!--            <artifactId>feign-httpclient</artifactId>-->
-<!--            <version>11.8</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>io.GitHub.openfeign</groupId>-->
-<!--            <artifactId>feign-httpclient</artifactId>-->
-<!--            <version>11.8</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.4.0</version>
+        </dependency>
         <dependency>
             <groupId>ru.yandex.qatools.htmlelements</groupId>
             <artifactId>htmlelements-java</artifactId>
@@ -240,6 +233,12 @@
                         <includes>
                             <include>modules/web_tests/src/test/java/Aston/com/tests/*Test.java</include>
                         </includes>
+<!-- config for parallel tests on junit -->
+                            <configurationParameters>
+                                junit.jupiter.execution.parallel.enabled=true
+                                junit.jupiter.execution.parallel.mode.default=concurrent
+                            </configurationParameters>
+
                     </properties>
                     <systemProperties>
                         <property>

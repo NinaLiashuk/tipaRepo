@@ -26,7 +26,7 @@ public class ManagerWebDriver {
         return driver;
     }
 
-    public static WebDriver getDriver() {
+    public static synchronized WebDriver getDriver() {
         if (driver == null) {
             try {
                 driver = createDriver();
