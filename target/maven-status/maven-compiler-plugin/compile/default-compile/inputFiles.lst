@@ -4,12 +4,17 @@ D:\tipaRepo\src\main\java\Aston\com\pages\main_page\ATinkMainPage.java
 D:\tipaRepo\src\main\java\Aston\com\pages\registration_autorization\recovery_password\RecoveryPasswordPage.java
 D:\tipaRepo\src\main\java\Aston\com\constants\Configuration.java
 D:\tipaRepo\src\main\java\Aston\com\helpers\ConfigReader.java
+D:\tipaRepo\src\main\java\Aston\com\pages\main_page\ATinkMain222.java
 D:\tipaRepo\src\main\java\Aston\com\helpers\PropertiesProvider.java
+D:\tipaRepo\src\main\java\Aston\com\managers\WebDriverDiscovery.java
 D:\tipaRepo\src\main\java\Aston\com\managers\ManagerWebDriver.java
 D:\tipaRepo\src\main\java\Aston\com\pages\registration_autorization\branches\BranchesAndATMs.java
+D:\tipaRepo\src\main\java\Aston\com\pages\registration_autorization\recovery_password\RecoveryPassword222.java
 D:\tipaRepo\src\main\java\Aston\com\helpers\GlobalMap.java
 D:\tipaRepo\src\main\java\Aston\com\pages\registration_autorization\contacts\ContactsPage.java
 D:\tipaRepo\src\main\java\Aston\com\constants\GlobalData.java
 D:\tipaRepo\src\main\java\Aston\com\pages\main_page\MainPage.java
 D:\tipaRepo\src\main\java\Aston\com\helpers\Required.java
+D:\tipaRepo\src\main\java\Aston\com\managers\WebDriverThreadLocal.java
 D:\tipaRepo\src\main\java\Aston\com\pages\BasePage.java
+D:\tipaRepo\src\main\java\Aston\com\pages\Base2.java

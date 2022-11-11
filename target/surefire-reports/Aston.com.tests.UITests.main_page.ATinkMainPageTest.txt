@@ -1,4 +1,78 @@
 -------------------------------------------------------------------------------
 Test set: Aston.com.tests.UITests.main_page.ATinkMainPageTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.01 s - in Aston.com.tests.UITests.main_page.ATinkMainPageTest
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 22.09 s <<< FAILURE! - in Aston.com.tests.UITests.main_page.ATinkMainPageTest
+testAssertThatSliderContainPersonalTextAndImage  Time elapsed: 0.673 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53d0d1c038ddb42278ad1664bf57d5a3, isElementDisplayed {id=87093dc9-c5cf-4065-92af-7d49d50619a0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\7490~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63371/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (53d0d1c038ddb42278ad1664bf57d5a3)] -> xpath: //h6[contains(@class, 'MuiTypography-subtitle') and contains(text(), 'Совершай платежи с карты на карту')]]
+Session ID: 53d0d1c038ddb42278ad1664bf57d5a3
+	at Aston.com.tests.UITests.main_page.ATinkMainPageTest.testAssertThatSliderContainPersonalTextAndImage(ATinkMainPageTest.java:45)
+
+testAssertThatImagesAreVisible  Time elapsed: 4.552 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//img[contains(@src, 'UgAAAS4A')]//parent::a"}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53d0d1c038ddb42278ad1664bf57d5a3, findElement {using=xpath, value=//img[contains(@src, 'UgAAAS4A')]//parent::a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\7490~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63371/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53d0d1c038ddb42278ad1664bf57d5a3
+	at Aston.com.tests.UITests.main_page.ATinkMainPageTest.testAssertThatImagesAreVisible(ATinkMainPageTest.java:75)
+
+testAssertThatTimeForSliderMovingCycleIsAboutNineSecond  Time elapsed: 12.589 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(@class, 'MuiTypography-root') and contains(text(), 'Кредит без визита')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\7490~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63371/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53d0d1c038ddb42278ad1664bf57d5a3
+	at Aston.com.tests.UITests.main_page.ATinkMainPageTest.testAssertThatTimeForSliderMovingCycleIsAboutNineSecond(ATinkMainPageTest.java:38)
+
+testAssertThatClickOnTabsOpensNewPage  Time elapsed: 12.593 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53d0d1c038ddb42278ad1664bf57d5a3, clickElement {id=76ab4987-d415-4b62-ac0a-0ad2dbc22c86}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\7490~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63371/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (53d0d1c038ddb42278ad1664bf57d5a3)] -> xpath: //img[@data-testid="logo"]]
+Session ID: 53d0d1c038ddb42278ad1664bf57d5a3
+	at Aston.com.tests.UITests.main_page.ATinkMainPageTest.testAssertThatClickOnTabsOpensNewPage(ATinkMainPageTest.java:55)
+
+testAssertThatColorIsChangeWhenMouseMoveToElement  Time elapsed: 14.966 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53d0d1c038ddb42278ad1664bf57d5a3, actions {actions=[org.openqa.selenium.interactions.Sequence@371cc83c]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\7490~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63371/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53d0d1c038ddb42278ad1664bf57d5a3
+	at Aston.com.tests.UITests.main_page.ATinkMainPageTest.testAssertThatColorIsChangeWhenMouseMoveToElement(ATinkMainPageTest.java:29)
+
+testAssertThatPushOnArrowsSwichesSliders  Time elapsed: 14.972 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(@class, 'MuiTypography-root') and contains(text(), 'Индивидуальный курс валют')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\7490~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63371/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53d0d1c038ddb42278ad1664bf57d5a3
+	at Aston.com.tests.UITests.main_page.ATinkMainPageTest.testAssertThatPushOnArrowsSwichesSliders(ATinkMainPageTest.java:66)
+
