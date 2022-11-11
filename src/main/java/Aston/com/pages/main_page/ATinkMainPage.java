@@ -152,4 +152,50 @@ public class ATinkMainPage extends BasePage {
         timer.stop();
         return timer.getTime();
     }
+
+
+
+    @FindBy(xpath = "//*[@data-testid=\"ArrowBackIcon\"]")
+    public WebElement arrowBack;
+
+    @FindBy(xpath = "//*[@data-testid=\"ArrowForwardIcon\"]")
+    public WebElement arrowForward;
+
+    @Step("Нажатие стрелки 'назад' в слайдере")
+    public void clickOnArrowBack(){
+        arrowBack.click();
+    }
+
+    @Step("Нажатие стрелки 'вперед' в слайдере")
+    public void clickOnArrowForward(){
+        arrowForward.click();
+    }
+
+    @Step("При нажатии стрелки 'назад' отображается предыдущий слайдер")
+    public boolean clickOnArrowBackChangeSlider(){
+        ManagerWebDriver.waitForElementVisible(xpath(format(SLIDER_PATTERN,"Кредит без визита")));
+        clickOnArrowBack();
+        return sliderPaymentsAndTransfers.isDisplayed();
+    }
+
+    @Step("При нажатии стрелки 'вперед' отображается следующий слайдер")
+    public boolean clickOnArrowForwardChangeSlider(){
+        ManagerWebDriver.waitForElementVisible(xpath(format(SLIDER_PATTERN,"Индивидуальный курс валют")));
+        clickOnArrowForward();
+        return sliderPaymentsAndTransfers.isDisplayed();
+    }
+
+
+    @FindBy(xpath = "//img[contains(@src, 'puulm')]//parent::a")
+    private WebElement tabAppStore;
+    @FindBy(xpath = "//img[contains(@src, 'UgAAAS4A')]//parent::a")
+    private WebElement tabGooglePlay;
+    @Step("Проверка видимости и некликабельности кнопки 'Download on the AppStore'")
+    public boolean clickOnImageAppStoreIsDisable(){
+        return tabAppStore.isDisplayed() && tabAppStore.getAttribute("outerHTML").contains("href=\"#");
+    }
+    @Step("Проверка видимости и некликабельности кнопки 'Get it on Google Play'")
+    public boolean clickOnImageGooglePlayIsDisable(){
+        return tabGooglePlay.isDisplayed() && tabGooglePlay.getAttribute("outerHTML").contains("href=\"#");
+    }
 }
